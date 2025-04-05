@@ -202,7 +202,7 @@ if st.button("📄 Gerar PDF"):
     with tempfile.NamedTemporaryFile(delete=False, suffix=".pdf") as f:
         pdf.output(f.name)
         st.success("✅ PDF gerado com sucesso!")
-        st.download_button("📥 Baixar PDF", data=open(f.name, "rb"), file_name="orcamento.pdf")
+        st.download_button("📥 Baixar PDF", data=open(f.name, "rb"), file_name=f"orcamento-{cliente}.pdf")
 
     # Limpeza da imagem temporária
     if logo_temp_path and os.path.exists(logo_temp_path):
