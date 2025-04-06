@@ -30,7 +30,6 @@ components.html(source_code, height=600)
 
 
 
-
 st.title("Orçamento - Itens do Serviço")
 
 # Upload da imagem (logo/banner)
