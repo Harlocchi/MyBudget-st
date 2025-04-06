@@ -130,7 +130,7 @@ class PDF(FPDF):
         # Caixa 2: Orçamento nº
         self.set_xy(130, 36)
         self.cell(30, 8, "Orçamento nº :", border=1)
-        self.cell(30, 8, "4", border=1, ln=1)
+        self.cell(30, 8, n_budget, border=1, ln=1)
 
         self.set_xy(130, 44)
         self.cell(30, 8, "Telefone:", border=1)
@@ -207,3 +207,4 @@ if st.button("📄 Gerar PDF"):
     # Limpeza da imagem temporária
     if logo_temp_path and os.path.exists(logo_temp_path):
         os.remove(logo_temp_path)
+    n_budget+=1
