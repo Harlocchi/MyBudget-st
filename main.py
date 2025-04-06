@@ -6,6 +6,7 @@ import tempfile
 import os
 import imghdr
 from datetime import datetime
+import streamlit.components.v1 as components
 
 
 n_budget = 1
