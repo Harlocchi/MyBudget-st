@@ -16,17 +16,17 @@ st.set_page_config(layout="wide")
 st.markdown("""
     <style>
         .main .block-container {
-            max-width: 95%;
+            max-width: 70%;
             padding-left: 3rem;
             padding-right: 3rem;
         }
     </style>
 """, unsafe_allow_html=True)
 
-htmlfile = open("adsense.html", "r", encoding="utf-8")
-source_code = htmlfile.read()
-print(source_code)
-components.html(source_code, height=150)
+# htmlfile = open("adsense.html", "r", encoding="utf-8")
+# source_code = htmlfile.read()
+# print(source_code)
+# components.html(source_code, height=150)
 
 
 
