@@ -22,17 +22,16 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
+adsense_code = """
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9500154758800356"
+     crossorigin="anonymous">
+     </script>
+"""
 
-# st.components.v1.html("""
-#     <div style="margin: 20px 0; text-align: center;">
-#         <ins class="adsbygoogle"
-#              style="display:block"
-#              data-ad-client="ca-pub-9500154758800356"
-#              data-ad-slot="1234567890"
-#              data-ad-format="auto"></ins>
-#         <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-#     </div>
-# """, height=200)
+# Insere o código HTML no app
+components.html(adsense_code, height=150)
+
+
 
 
 st.title("Orçamento - Itens do Serviço")
