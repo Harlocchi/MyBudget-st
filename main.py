@@ -23,14 +23,10 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-adsense_code = """
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9500154758800356"
-     crossorigin="anonymous">
-     </script>
-"""
-
-# Insere o código HTML no app
-components.html(adsense_code, height=150)
+htmlfile = open("adsense.html", "r", encoding="utf-8")
+source_code = htmlfile.read()
+print(source_code)
+components.html(source_code, height=600)
 
 
 
